@@ -46,7 +46,8 @@ jobs:
       - name: Check Gemini skill discovery
         id: skill_check
         run: |
-          gemini skills link "$SKILL_DIR"
+          mkdir -p /home/runner/.gemini/skills
+          echo "Y" | gemini skills link "$SKILL_DIR"
           DISCOVERY=$(gemini skills list 2>&1)
           echo "$DISCOVERY"
           if echo "$DISCOVERY" | grep -qi "verified-agent-identity.*\[Enabled\]"; then

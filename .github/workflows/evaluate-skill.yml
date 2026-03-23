@@ -61,7 +61,7 @@ jobs:
       - name: Run Gemini prompt
         id: gemini_run
         run: |
-          gemini -p "Create a new billions network identity" --output json \
+          gemini -p "Create a new billions network identity" -y --output-format json \
             > /tmp/gemini_output.json
           echo "--- Gemini output ---"
           cat /tmp/gemini_output.json

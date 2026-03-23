@@ -14,7 +14,7 @@ jobs:
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       SKILL_DIR: ${{ github.workspace }}/.skills/verified-agent-identity
-      KMS_FILE: "$HOME/.openclaw/billions/kms.json"
+      KMS_FILE: "/home/runner/.openclaw/billions/kms.json"
 
 
     steps:

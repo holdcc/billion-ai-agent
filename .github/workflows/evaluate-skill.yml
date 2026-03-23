@@ -40,7 +40,7 @@ jobs:
           cp "${{ github.workspace }}"/scripts/shared/storage/*.js "$SKILL_DIR/scripts/shared/storage/"
 
       - name: Install skill script dependencies
-        working-directory: "$SKILL_DIR/scripts"
+        working-directory: ${{ github.workspace }}/.skills/verified-agent-identity/scripts
         run: npm ci
 
       - name: Check Gemini skill discovery

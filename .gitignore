@@ -3,5 +3,5 @@ scripts/node_modules
 .DS_Store
 *.zip
 upload.sh
+node_module
 node_modules
-Holdcc

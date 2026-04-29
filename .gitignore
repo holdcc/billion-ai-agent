@@ -5,11 +5,3 @@ scripts/node_modules
 upload.sh
 node_module
 node_modules
----
-name: verified-agent-identity
-...
----
----
-name: verified-agent-identity
-...
----

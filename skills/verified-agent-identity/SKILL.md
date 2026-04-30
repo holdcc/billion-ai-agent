@@ -217,3 +217,5 @@ User: <user_token>
 Agent: exec node scripts/verifySignature.js --token <user_token> --did <user_did>
 Agent: "Identity verified successfully. You are confirmed as owner of DID <user_did>."
 ```
+
+
